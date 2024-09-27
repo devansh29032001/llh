@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    /* background-color: red; */
+    height: 20vh;
+    padding: 10px 30px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+    background-color: #FFFFFF;
+   
+}
+
+#nav-1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: white; */
+    padding: 10px 30px;
+    padding-right: 40px;
+}
+#nav-1 ul{
+    display: flex;
+    /* background-color: brown; */
+    gap: 1.4vw;
+    list-style-type: none;
+    
+}
+
+
+#nav-1 ul a{
+    font-size: 14.5px;
+    color: black;
+    text-decoration: none;
+}
+
+#nav-1 li{
+    position: relative;
+}
+#nav-1 #submenu{
+  
+    display: none;
+}
+#nav-1 li:hover #submenu{
+    height: auto;
+    width: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap:3vh;
+    position: absolute;
+    top: 100%;
+    left: -15%;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3px;
+    z-index: 99;
+    border-radius: 3%;
+}
+
+
+#nav-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua;e */
+    padding: 10px 20px;
+    gap:2vw;
+}
+#nav-2 ul{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    /* background-color: brown; */
+    list-style-type: none; 
+    gap: 6vw;
+    padding-right: 30px;
+}
+#nav-2 h2{
+    font-size: 3vw;
+}
+
+#nav-2 li{
+    position: relative;
+}
+
+#nav-2 .submenu{
+    display: none;
+}
+
+#nav-2 li:hover .submenu{
+    height: auto;
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+    
+    
+    justify-content: space-between;
+    gap:3vh;
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    z-index: 99;
+    border-radius: 3%;
+}
+
+#nav-2 li a{
+    text-decoration: none;
+}
+#nav-2 li a:hover{
+    text-decoration:underline;
+}
+
+#photo{
+    width: 100%;
+    height: 50.5vh;
+    background-color: red;
+    background-image: url(https://www-eur-prd-lhh930-com.azureedge.net/us/en/-/media/mim-images/one-lhh-homepage.jpg?h=540&w=1440&rev=9d4f2f87da50456ba27d7afef3825bf9&hash=DCA53B5FB5BD4B392E227C729BC55460);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    margin-top: 20vh;
+}
+
+#photo-text {
+/* background-color: red; */
+width: 35%;
+font-size: 2vw;
+position: absolute;
+left: 8%;
+top:10%;
+}
+
+
+#photo-text h1{
+    font-weight: 300;
+    color: rgb(94, 3, 94);
+}
+
+#text{
+    height: 30vh;
+    background-color: rgba(250, 245, 245, 0.929);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text h1{
+    padding: 10px;
+    font-size: 3vw;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar1{
+    height: 2.5vw;
+    width: 30vw;
+    padding: 20px 40px;
+    position: relative;
+    border-radius: 7px;
+    font-size: 1.5vw;    
+}
+
+.s1{
+    position: absolute;
+    z-index: 999;
+    left:15%;
+    top:91.5%
+}
+
+.search-bar2{
+    height: 2.5vw;
+    width: 30vw;
+    padding: 20px 40px;
+    position: relative;
+    border-radius: 7px;
+    font-size: 1.5vw;
+    margin-left: 20px;
+}
+
+.s2{
+    position: absolute;
+    z-index: 999;
+    left:47%;
+    top:91.5%
+}
+
+button{
+    height: 2.5vw;
+    width: 10vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #061f34;
+    color: white;
+    font-size: 1.5vw;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+#page2{
+     padding:40px;
+}
+
+#quick{
+    height: 30vh;
+    width: 100%; 
+
+    
+    /* background-color: red; */
+    padding:  0 20px;
+    
+}
+#quick h2{
+    font-size: 3vw;
+    font-weight: 300;
+    color: black;
+    
+    margin-bottom: 5px;
+}
+
+#subquick-container{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.subquick{
+    padding: 10px;
+    width: 20vw;
+    height:15vh;
+    border-radius: 5px;
+    /* background-color: aqua;   */
+    border: 1px solid black;
+}
+.subquick h3{
+    font-weight: 300;
+}
+
+.subquick .sub-h3{
+    font-weight: 300;
+    font-size: 1.2vw;
+    margin-top: 10px;
+}
+
+#talent{
+    
+    height: 130vh;
+    width: 100%;
+    /* background-color: blue; */
+    padding:  20px 20px;
+}
+
+
+#talent h2{
+    font-size: 3vw;
+    font-weight: 300;
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+#talent p{
+    font-size: 1.7vw;
+    font-weight: 300;
+     width: 65%;
+    margin-bottom: 20px;
+    line-height: 2.9vw;
+    color: rgb(80, 75, 75);
+}
+
+#image1{
+    width: 100%;
+    height: 86vh;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+#about{
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+}
+
+#about a{
+    border: 1px solid black;
+    padding: 15px 25px;
+    font-size: 2vw;
+    font-weight: 300;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+#about a:hover{
+    border-color: blue;
+}
+
+#work{
+    padding:60px;
+}
+#work h1{
+    font-size: 3vw;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 5px;
+}
+
+#work p{
+    font-size: 1.7vw;
+    font-weight: 300;
+     width: 65%;
+    margin-bottom: 20px;
+    line-height: 2.9vw;
+    color: rgb(80, 75, 75);
+}
+
+#card-container{
+    height:90vh ;
+    width: full;
+    /* background-color: blue;  */
+    display: flex;
+    justify-content: center;
+
+}
+
+#card-container .card{
+    width: 27%;
+    height: 100%;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;   
+}
+
+.description{
+    padding: 20px;
+    width: 100%;
+    height: 60%;
+    overflow: auto;
+}
+.description h2{
+
+    font-weight: 200;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description p{
+    font-size: 1.3vw;
+    font-weight: 300;
+    color: rgb(80, 75, 75);
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
