@@ -633,7 +633,7 @@ height: 40%;
 }
 
 .driving-card p{
-    font-size: 0.5vh;
+    font-size: 1.5vw;
     color: rgb(80, 75, 75);
     font-weight: 300; 
     margin-top: 10px;
@@ -866,7 +866,6 @@ hr{
         cursor: pointer;
     }
     #sidenav{
-        display: none;
        position: fixed;
        top:7%;
        z-index: 999999999;
@@ -1112,7 +1111,7 @@ hr{
     
     #page2{
          padding:40px;
-         width: 200%;
+         width: 100%;
         
     }
     
@@ -1162,8 +1161,8 @@ hr{
     }
     
     #talent{
-        height: 90vh;
-        width:100%;
+        height: 80vh;
+        width:230%;
         /* background-color: blue; */
         padding:  20px 20px;
     }
@@ -1176,9 +1175,9 @@ hr{
         margin-bottom: 5px;
     }
     #talent p{
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 300;
-         width: 98%;
+         width: 100%;
         margin-bottom: 20px;
         line-height: 5vh;
         color: rgb(80, 75, 75);
@@ -1248,7 +1247,7 @@ hr{
     }
     
     #card-container .card{
-        width: 190%;
+        width: 200%;
         margin: 20px;
         border-radius: 5px;
        display: flex;
@@ -1280,6 +1279,9 @@ hr{
     #partner{
         padding:60px;
         width: 200%;
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
     }
     #partner-h2{
         font-size: 50px;
@@ -1289,7 +1291,7 @@ hr{
         width: 100%;
     }
     #partner-p{
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 300;
         width: 100%;
         margin-bottom: 20px;
@@ -1299,14 +1301,15 @@ hr{
     
     #partner-cards1{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
-        
-        height:30vh;
+        gap: 10vh ;
+        height:50vh;
         width: 100%;
-        margin-bottom: 20vh;
+        margin-bottom: 2vh;
+        /* background-color: red; */
     }
     #partner-cards2{
         display: flex;
@@ -1314,15 +1317,17 @@ hr{
         align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
-        
-        height:30vh;
+        /* background-color: red; */
+        margin-top:50vh;
+        height:100vh;
         width: 100%;
-        margin-bottom: 20vh;
+        margin-bottom: 10vh;
+        gap: 10vh;
     }
     .partner-card{
         padding: 10px;
-        height:20vh;
-        width:90%;
+        height:100vh;
+        width:100%;
         
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1334,20 +1339,100 @@ hr{
         font-size: 40px;
     }
     
-    .partner-card a{
-       color: red;
+    .partner-card p{
+       /* color: red; */
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+
+
+    #team{
+        height: 200vh;
+        display: flex;
+        padding: 20px 60px ;
+        /* background-color: red; */
+        width: 200%;
+        flex-direction: column;
+        gap: 20vh;
     }
     
-    #global{
-        height: 150vh;
+    #team1{
+        
+        padding: 4vw;
+        height: 70vh;
+        /* background-color: blue; */
+        width: 100%;
+    }
+    #team1 p{
+        font-size: 40px;
+    }
+    #team2{
+        
+        height: 70vh;
+        padding: 4vw;
+    }
+    #team2 p{
+        font-size: 40px;
+    }
+    
+    .teaminfo{
+        display: flex;
+        gap: 5vw;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .teaminfo img{
+        height:  100px;
+    }
+    
+    .name{
+        display: flex;
+        flex-direction: column;
+        
+    }
+     .name h1{
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+
+    #card-containerabout{
+        height:auto ;
         width: 200%;
-        background-color: red;
+        /* background-color: blue;  */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20vh;
+        flex-direction: column;
+    
+    }
+    #card-containerabout .card{
+        width: 95%;
+        height: 100%;
+        margin: 20px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;   
+    }
+    #card-containerabout img{
+    object-fit: cover;
+    height: 40%;
+    }
+    
+
+    
+    #global{
+        height: auto;
+        width: 200%;
+        /* background-color: red; */
         display:flex;
         padding: 10px;
-       
+        flex-direction: column;
+        align-items: center;
         gap: 5vh;
         
         
@@ -1356,7 +1441,7 @@ hr{
     #global-info{
         height: 100%;
         width: 100%;
-        background-color: beige;
+        /* background-color: beige; */
         padding:4vw 50px;
         
     }
@@ -1369,7 +1454,7 @@ hr{
         font-size: 50px;
         color: rgb(80, 75, 75);
         font-weight: 300;
-        line-height: 5vh;
+        line-height: 10vh;
         margin-bottom: 8vh;
     }
     #global-info a{
@@ -1404,33 +1489,35 @@ hr{
         width: 200%;
         display: flex;
         flex-direction: column;
-        gap: 5vh;
+        justify-content: space-evenly;
+        /* background-color: red; */
     }
     
     #driving h2{
-        font-size: 3vw;
+        font-size: 50px;
         font-weight: 400;
         margin-bottom: 5px;
     }
     
-    #driving .driving-p{
-        font-size: 2vh;
+    
+    #driving p{
+        font-size: 30px;
+        font-weight: 300;
         color: rgb(80, 75, 75);
-        font-weight: 400;
-        line-height: 2.3vw;
-        margin-bottom: 8vh;
-        width: 60%;
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 5vh;
     }
     
     #driving-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100vh;
+        height: 140vh;
         /* background-color: red; */
         flex-direction: column;
         gap: 5vh;
-        margin-bottom: 5vh;
+        margin-bottom: 100px;
     }
     
     
@@ -1457,7 +1544,7 @@ hr{
     }
     
     .driving-card p{
-        font-size: 25px;
+        font-size: 30px;
         color: rgb(80, 75, 75);
         font-weight: 300; 
         margin-top: 10px;
@@ -1465,41 +1552,41 @@ hr{
     
     footer{
         background-color: #290C2F;
-        height: 120vh;
+        height: auto;
         padding:60px;
         width: 200%;
-        margin-top: 10vh;
     }
     
     #footer-part1 h2{
         font-weight: 400;
         color:white;
-        font-size: 3vw;
+        font-size: 40px;
         margin-top: 2vh;
     }
     #footer-part1 p{
-        font-size: 1.5vw;
+        font-size: 30px;
         color: white;
         font-weight: 400;
-        line-height: 2.3vw;
-        width: 45%;
+        line-height: 30px;
+        width: 100%;
         margin-top: 2vh;
     }
     
     
     #info-container{
-        height: 40vh;
+        height: 100vh;
         width: 100%;
       
         padding: 1px;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 10vh;
     }
     #info-container  .info{
-        width: 30%;
-        height: 100%;
+        width: 70%;
+        height: 50%;
         border-radius: 10px;
-        
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 10px;
     }
@@ -1507,17 +1594,18 @@ hr{
     #info-container h2{
         font-weight: 200;
         color: #FFFFFF;
-        font-size: 3vw;
+        font-size: 30px;
     } 
     
     #info-container p{
         width: 100%;
-        font-size: 1.5vw;
+        font-size:20px;
         margin-bottom: 1vw;
     }
     #info-container a{
-        font-size: 1vw;
+        font-size: 20px;
         color: pink;
+        text-decoration: none;
     }
     
     #footer-part2{
@@ -1525,75 +1613,78 @@ hr{
         display: flex; 
         align-items: flex-start;
         justify-content: space-evenly;
+        flex-direction: column;
         gap:5vw;
     }
     #download h1{
-        font-size: 3vw;
+        font-size: 50px;
         font-weight: 500;
-        margin-bottom: 10px;
+        margin-bottom: 5vh;
         color: #fff;
     }
     
     #download p{
-        font-size: 1.2vw;
+        font-size: 50px;
         color: #fff;
         font-weight: 300;
         line-height: 2.3vw;
-        margin-bottom: 10px;
+        margin-bottom: 5vh;
     }
     #appplay{
         display: flex;
         
         align-items: center;
-        width: 18%;
+        width: 20%;
         justify-content: space-between;
     }
     
     #appplay img{
-        height:30px;
+        height:50px;
         object-fit: cover;
     }
     #individuals{
+        margin-top: 10vh;
         display: flex;
         flex-direction: column;
         gap: 3vh;
         
         height: 40vh;
-        width: 25%;   
+        width: 50%;   
     }
     #individuals a{
         color: white;
         text-decoration: none;
-        font-size: 1vw;
+        font-size: 20px;
     }
     
     #organizations{
+        margin-top: 10vh;
         display: flex;
         flex-direction: column;
         gap: 3vh;
         
-       
         height: 40vh;
-        width: 25%;   
+        width: 50%;   
     }
     #organizations a{
         color: white;
         text-decoration: none;
-        font-size: 1vw;
+        font-size: 20px;
     }
     
     #company{
+        margin-top: 10vh;
         display: flex;
         flex-direction: column;
+        gap: 3vh;
         
-        gap:3vh;
-        min-height: 40vh;
-        width: 25%;   
+        height: 40vh;
+        width: 50%;    
     }
     #company a{
         color: white;
         text-decoration: none;
-        font-size: 1vw;
+        font-size: 20px;
     }
     
     #footer-part2 h2{
@@ -1605,25 +1696,30 @@ hr{
         border: 0;
         height: 1px;
         background-color: #f1eded;
-        margin-top: 60px;
-        margin-bottom: 20px;
+        margin-top:20vh;
+        margin-bottom: 10vh;
     }
     #last{
         display: flex;
-        gap:10vw;
+        justify-content: space-around;
+        /* background-color: red; */
+        flex-direction: column;
     }
     #last a{
-        font-size: 0.9vw;
+        font-size: 30px;
         color: white;
         text-decoration: none;
     
     }
+    
     #last p{
         color: rgb(80, 75, 75);
-        font-size: 1.2vw;
-        width: 10%;
+        font-size: 30px;
+        width: 50%;
         font-weight: bold;
     }
+    
+    
     #lastimage{
         display: flex;
         justify-content: space-evenly;
@@ -1631,7 +1727,26 @@ hr{
         width:10%
     }
     #last img{
-        height: 30px;
+        height: 50px;
         
     }
+    
+    #scrollToTopBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position */
+        bottom: 20px; /* Position from the bottom */
+        right: 30px; /* Position from the right */
+        z-index: 99; /* Make sure it's above other content */
+        border-radius: 50%;
+        width: 70px; /* Set a specific width */
+        height: 70px;
+    }
+    #scrollToTopBtn i{
+        font-size: 20px;
+    }
+    
+    #scrollToTopBtn:hover {
+        background-color: #333; /* Darker background on hover */
+    }
+ 
 }
